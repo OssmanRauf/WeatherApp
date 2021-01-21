@@ -23,7 +23,7 @@ async function getweather(lat, lon) {
     // } else {
     //     url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric `;
     // }
-    https: const data = await fetch(url);
+    const data = await fetch(url);
     return data.json();
 }
 
