@@ -34,8 +34,8 @@ async function displayWeather(coordinates) {
     // console.log(bdy[0]);s
     const main = document.querySelector(".main");
     document.getElementById("city-name").textContent = weatherInfo.name;
-    const img = document.getElementById("weather-icon");
-    img.src = `http://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}@2x.png`;
+    const img = document.querySelector(".weather-icon");
+    img.innerHTML = `<img id="weather-icon" src="http://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}@2x.png" alt="">`;
     document.querySelector(".temp-nr").innerHTML = `${parseInt(
     weatherInfo.main.temp
   )} &#176C`;
