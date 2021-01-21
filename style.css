@@ -40,14 +40,14 @@ body {
 
 .temp-info {
     /* width: 50%; */
-    margin: 1.3rem;
+    margin: 0.5rem;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
 .temp-info span {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 }
 
 .forecast {
@@ -64,10 +64,13 @@ body {
     }
 }
 
-@media (max-width: 300px) {
-    #max-min {
+@media (max-width: 330px) {
+    .temp-info {
         display: flex;
         flex-direction: column;
+    }
+    .temp-info span {
+        margin-bottom: 0.5rem;
     }
 }
 
