@@ -17,13 +17,13 @@ function main() {
 async function getweather(lat, lon) {
     const key = "0f1f808bc93546f977683b063c081003";
     // const city = "Nampula";
-    let url;
-    if (location.protocol === "http") {
-        url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric `;
-    } else {
-        url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric `;
-    }
-    const data = await fetch(url);
+    let url = `cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`;
+    // if (location.protocol === "http") {
+    //     url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric `;
+    // } else {
+    //     url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric `;
+    // }
+    https: const data = await fetch(url);
     return data.json();
 }
 
