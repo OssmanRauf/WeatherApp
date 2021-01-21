@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather APP</title>
+</head>
+
+<body>
+    <main class="main remove">
+        <div class="info">
+            <h2 id="city-name">Nampula</h2>
+            <div class="temp">
+                <img id="weather-icon" src="http://openweathermap.org/img/wn/10n@2x.png" alt="weather-icon" />
+                <h1 class="temp-nr">89.6 F</h1>
+            </div>
+            <h3 class="temp-comment" id="temp-comment">sky is clear</h3>
+            <p class="temp-info">
+                <span id="humidity">43% humidity</span>
+                <span id="wind">13mph wind</span>
+            </p>
+            <h3 class="forecast">
+                Today's Forecast: <span id="forecats">clear</span>
+            </h3>
+            <p class="temp-info" id="max-min">
+                <span id="max-temp">max 45</span>
+                <span id="min-temp">min 46</span>
+            </p>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
