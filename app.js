@@ -2,6 +2,9 @@ function main() {
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(getCordinate);
+        } else {
+            document.getElementById("temp-comment").textContent =
+                "Geo Location problem please turn on location";
         }
     }
 
